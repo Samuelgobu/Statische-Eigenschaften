@@ -24,6 +24,11 @@ namespace Statische_Eigenschaften
             WriteArray(zahlen);
             WriteArray(Würfel.W6(5));
 
+            // --- 07.10.22 ---
+            Console.WriteLine("---Wir sind gerade hier---");
+            int spiel1 = Würfel.Spiel1();
+            Würfel.Spiel1();
+
         }
         /* Erstellen Sie das folgende Würfspiel:
          * Es werden 5 Würfel (W6) mit 6 Seiten geworfen.
@@ -111,6 +116,69 @@ namespace Statische_Eigenschaften
             return result;
         }
         //Bsp : W(6) -> {2;5;6;1}
+        public static int Spiel1()
+        {
+
+            int[] würfel = W6(5);//Wir würfeln 5 mal
+            // Wir können den Wurf in die Konsole schreiben:
+            SchreibeWurf(würfel);
+            //Wir zählen die Würfel:
+            int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+            for (int k = 0; k < würfel.Length; k++)
+            {
+                switch (würfel[k])
+                {
+                    case 1: c1++; break;
+                    case 2: c2++; break;
+                    case 3: c3++; break;
+                    case 4: c4++; break;
+                    case 5: c5++; break;
+                    case 6: c6++; break;
+                    default: Console.WriteLine("Error!");break;
+                }
+            }
+            int result = 0;
+            result += PunkteSpiel1(c1, 1);
+            result += PunkteSpiel1(c2, 2);
+            result += PunkteSpiel1(c3, 3);
+            result += PunkteSpiel1(c4, 4);
+            result += PunkteSpiel1(c5, 5);
+            result += PunkteSpiel1(c6, 6);
+            return 0;
+            
+        }
+        private static void SchreibeWurf(int [] wurf)
+        {
+            Console.Write("Sie haben gewürfelt: ");
+            for (int k = 0; k < wurf.Length; k++)
+            {
+                Console.Write(wurf[k] + " ");
+            }
+            Console.WriteLine();
+        }
+        private static int PunkteSpiel1(int anzahl, int augenzahl)
+        {
+            //anzahl = 4; augenzahl = 2 ---> Ergebnis : 200
+            //anzahl = 2; augenzahl = 4 ---> Ergebnis : 0
+            int punktzahl = 0;
+            while (anzahl > 0)
+            {
+                if (anzahl >= 3)
+                {
+                    if (augenzahl > 1) { punktzahl += augenzahl * 100; }
+                    else { punktzahl += 1000; }
+                    anzahl -= 3;
+                }
+                else if (anzahl < 3 && anzahl > 0)
+                {
+                    if (augenzahl == 1) { punktzahl += 100; }
+                    else if (augenzahl == 5) { punktzahl += 50; }
+                    anzahl--;
+                }
+            }
+            
+            return punktzahl;
+        }
         
     }
 }
