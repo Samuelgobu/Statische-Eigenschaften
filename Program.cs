@@ -28,6 +28,7 @@ namespace Statische_Eigenschaften
             Console.WriteLine("---Wir sind gerade hier---");
             int spiel1 = Würfel.Spiel1();
             Würfel.Spiel1();
+            
 
         }
         /* Erstellen Sie das folgende Würfspiel:
@@ -145,6 +146,7 @@ namespace Statische_Eigenschaften
             result += PunkteSpiel1(c5, 5);
             result += PunkteSpiel1(c6, 6);
             return 0;
+            
             
         }
         private static void SchreibeWurf(int [] wurf)
