@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statische Eigenschaften", "Statische Eigenschaften.csproj", "{3F570BD6-D89D-40E7-AE38-C1004BE98712}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statische Eigenschaften", "Statische Eigenschaften\Statische Eigenschaften.csproj", "{0992ACF2-D3B8-492A-923B-53D3889D4ADE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F570BD6-D89D-40E7-AE38-C1004BE98712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F570BD6-D89D-40E7-AE38-C1004BE98712}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F570BD6-D89D-40E7-AE38-C1004BE98712}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F570BD6-D89D-40E7-AE38-C1004BE98712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0992ACF2-D3B8-492A-923B-53D3889D4ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0992ACF2-D3B8-492A-923B-53D3889D4ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0992ACF2-D3B8-492A-923B-53D3889D4ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0992ACF2-D3B8-492A-923B-53D3889D4ADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F76968F5-BE2D-479E-BC8C-177055B7C2C5}
+		SolutionGuid = {B8CB2A90-8B07-48E9-AA72-AF57BA9E3B91}
 	EndGlobalSection
 EndGlobal

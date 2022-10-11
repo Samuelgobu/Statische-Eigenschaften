@@ -28,6 +28,7 @@ namespace Statische_Eigenschaften
             Console.WriteLine("---Wir sind gerade hier---");
             int spiel1 = Würfel.Spiel1();
             Würfel.Spiel1();
+            Console.WriteLine(spiel1);
             
 
         }

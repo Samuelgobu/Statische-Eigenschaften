@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F570BD6-D89D-40E7-AE38-C1004BE98712}</ProjectGuid>
+    <ProjectGuid>{0992ACF2-D3B8-492A-923B-53D3889D4ADE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Statische_Eigenschaften</RootNamespace>
     <AssemblyName>Statische Eigenschaften</AssemblyName>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Statische Eigenschaften zzz.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
